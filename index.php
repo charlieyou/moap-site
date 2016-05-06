@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		
+
 		<script src="//load.sumome.com/" data-sumo-site-id="4033db3e56ab0dd65169a4581d83781ab25a63791254a061282d8fe6dcdd779a" async="async"></script>
 	</head>
 	<body class="landing">
@@ -49,13 +49,12 @@
 							</br>
 							<p>Your personal algorithm design assistant</p>
                             <div class="6u 12u$(xsmall)">
+                                <form action="solve.php" method="post">
                                     <input type="text" name="moap-input" id="moap-input" value="" placeholder="Enter your problem here." />
+                                <input type="submit"
+                                </form>
                             </div>
                         </center>
-                        </br>
-                        <ul class="actions">
-                            <li><a href="#" class="button special">Solve it!</a></li>
-                        </ul>
                     </div>
                 </section>
 
@@ -86,7 +85,7 @@
                             <input type="text" name="name" placeholder="Your Name">
                             <input type="email" name="_replyto" placeholder="Your Email">
                             <input type="submit" value="Send">
-                       </form> 
+                       </form>
                         </ul>
                     </div>
                 </section>
