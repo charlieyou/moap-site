@@ -50,7 +50,7 @@
               <p>Your personal algorithm design assistant</p>
 <div class="6u 12u$(xsmall)">
                                 <form action="solve.php" method="post">
-                                <input type="text" name="moap-input" value="" placeholder="<?php $_POST["moap-input"];?>" />
+                                <input type="text" name="moap-input" value="" placeholder=<?php $_POST["moap-input"];?> >
                                 <input type="submit">
                                 </form>
                             </div>
