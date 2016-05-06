@@ -50,6 +50,7 @@
               <p>Your personal algorithm design assistant</p>
 <?php
 $cmd = "java -jar /home/youc/MOAP.jar \"" . $_POST["moap-input"] . "\" 2>&1";
+echo $_POST["moap-input"]."\n";
 echo "<pre>".shell_exec($cmd)."</pre>";
 ?>
                         </center>
@@ -101,7 +102,6 @@ echo "<pre>".shell_exec($cmd)."</pre>";
 
 
     <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.scrollex.min.js"></script>
         <script src="assets/js/jquery.scrolly.min.js"></script>
         <script src="assets/js/skel.min.js"></script>
