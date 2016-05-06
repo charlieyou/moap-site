@@ -50,7 +50,7 @@
               <p>Your personal algorithm design assistant</p>
 <?php
 $cmd = 'java -jar ~/MOAP.jar ' . $_POST["moap-input"] . " 2>&1";
-echo "Problem: ".$POST["moap-input"];
+echo "Problem: ".$_POST["moap-input"];
 echo "<pre>".shell_exec($cmd)."</pre>";
 ?>
                         </center>
