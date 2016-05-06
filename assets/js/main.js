@@ -58,7 +58,6 @@
 		// Scrolly.
 			$('.scrolly')
 				.scrolly({
-					speed: 1500,
 					offset: $header.outerHeight()
 				});
 
@@ -67,7 +66,6 @@
 				.append('<a href="#menu" class="close"></a>')
 				.appendTo($body)
 				.panel({
-					delay: 500,
 					hideOnClick: true,
 					hideOnSwipe: true,
 					resetScroll: true,
