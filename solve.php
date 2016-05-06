@@ -50,13 +50,13 @@
               <p>Your personal algorithm design assistant</p>
 <div class="6u 12u$(xsmall)">
                                 <form action="solve.php" method="post">
-                                    <input type="text" name="moap-input" value="" placeholder="Enter your problem here." />
+                                <input type="text" name="moap-input" value="" placeholder="<?php $_POST["moap-input"];?>" />
                                 <input type="submit">
                                 </form>
                             </div>
 <?php
 $cmd = "java -jar /home/youc/MOAP.jar \"" . $_POST["moap-input"] . "\" 2>&1";
-echo $_POST["moap-input"]."\n";
+#echo $_POST["moap-input"]."\n";
 echo "<pre>".shell_exec($cmd)."</pre>";
 ?>
                         </center>
