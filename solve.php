@@ -50,16 +50,8 @@
               <p>Your personal algorithm design assistant</p>
 <?php
 $cmd = 'java -jar ~/MOAP.jar ' . $_POST["moap-input"] . " 2>&1";
-while (@ ob_end_flush()); // end all output buffers if any
-
-$proc = popen($cmd, 'r');
-echo '<pre>';
-while (!feof($proc))
-{
-    echo fread($proc, 4096);
-    @ flush();
-}
-echo '</pre>';
+echo "<pre>".shell_exec($cmd)."</pre>";
+echo "<pre>".shell_exec('set')."</pre>";
 ?>
                         </center>
                     </div>
