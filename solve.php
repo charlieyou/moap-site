@@ -49,7 +49,7 @@
               </br>
               <p>Your personal algorithm design assistant</p>
 <?php
-$cmd = 'java -jar ~/MOAP.jar ' . $_POST["moap-input"];
+$cmd = 'java -jar ~/MOAP.jar ' . $_POST["moap-input"] . " 2>&1";
 while (@ ob_end_flush()); // end all output buffers if any
 
 $proc = popen($cmd, 'r');
