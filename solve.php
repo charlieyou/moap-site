@@ -50,6 +50,7 @@
               <p>Your personal algorithm design assistant</p>
 <?php
 echo 'java -jar ~/MOAP.jar ' . $_POST["moap-input"];
+echo shell_exec('ls');
 ?>
                         </center>
                     </div>
