@@ -45,7 +45,8 @@
                 <section id="banner" class="wrapper style5 special">
                     <div class="inner">
                         <center>
-                            <img src="images/moap-cropped.png" style='width:50%;' />
+                            <a href=index.php><img src="images/moap-cropped.png" style='width:50%;' />
+</a>
               </br>
               <p>Your personal algorithm design assistant</p>
                             <div class="6u 12u$(xsmall)">
