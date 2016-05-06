@@ -49,8 +49,7 @@
               </br>
               <p>Your personal algorithm design assistant</p>
 <?php
-echo $_POST["moap-input"];
-# echo shell_exec('java -jre ~/MOAP.jar ' . $_POST["moap-input"]);
+echo 'java -jre ~/MOAP.jar ' . $_POST["moap-input"];
 ?>
                         </center>
                     </div>
