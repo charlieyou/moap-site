@@ -49,7 +49,7 @@
               </br>
               <p>Your personal algorithm design assistant</p>
 <?php
-echo shell_exec('java -jar ~/MOAP.jar ' . $_POST["moap-input"]);
+echo shell_exec('nohup java -jar ~/MOAP.jar ' . $_POST["moap-input"]);
 ?>
                         </center>
                     </div>
