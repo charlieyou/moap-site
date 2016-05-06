@@ -48,6 +48,12 @@
                             <img src="images/moap-cropped.png" style='width:50%;' />
               </br>
               <p>Your personal algorithm design assistant</p>
+<div class="6u 12u$(xsmall)">
+                                <form action="solve.php" method="post">
+                                    <input type="text" name="moap-input" value="" placeholder="Enter your problem here." />
+                                <input type="submit">
+                                </form>
+                            </div>
 <?php
 $cmd = "java -jar /home/youc/MOAP.jar \"" . $_POST["moap-input"] . "\" 2>&1";
 echo $_POST["moap-input"]."\n";
@@ -56,39 +62,6 @@ echo "<pre>".shell_exec($cmd)."</pre>";
                         </center>
                     </div>
                 </section>
-
-                <section id="one" class="wrapper style5 special">
-                    <div class="inner">
-                        <header class="major">
-                            <h2>What is MOAP?</h2>
-                            <p>The <b>M</b>other <b>O</b>f <b>A</b>ll <b>P</b>rograms is an automated algorithm design assistant.</br>
-                            Simply enter your algorithm problem, and MOAP will give you a solution in pseudocode.</p>
-              <p>Visit our <a href="getting_started.html">About</a> page to learn more, or our <a href="getting_started.html">Getting Started</a> page to start using MOAP!</p>
-                        </header>
-                        <ul class="icons major">
-                            <li><span class="icon fa-user major style1"><span class="label">User</span></span></li>
-                            <li><span class="icon fa-arrow-circle-right major style2"><span class="label">MOAP</span></span></li>
-                            <li><span class="icon fa-code major style3"><span class="label">Code</span></span></li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section id="cta" class="wrapper style5">
-                    <div class="inner">
-                        <header>
-                            <h2>Want to be an alpha tester or learn more?</h2>
-                            <p>We promise to only use your email for alpha-test notifications and information you request.</p>
-                        </header>
-                        <ul class="actions vertical">
-                       <form action="https://formspree.io/rayokadaparker@gmail.com" method="POST">
-                            <input type="text" name="name" placeholder="Your Name">
-                            <input type="email" name="_replyto" placeholder="Your Email">
-                            <input type="submit" value="Send">
-                       </form>
-                        </ul>
-                    </div>
-                </section>
-
                 <footer id="footer" class="wrapper style5 special">
                     <ul class="icons">
                         <li><a href="http://www.rayokadaparker.com/" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
