@@ -49,7 +49,7 @@
               </br>
               <p>Your personal algorithm design assistant</p>
 <?php
-$output = shell_exec('java -jar ~/MOAP.jar ' . $_POST["moap-input"]);
+$output = shell_exec('java -jar ~/MOAP.jar ' . $_POST["moap-input"] . "2>&1");
 echo "<pre>$output</pre>";
 ?>
                         </center>
