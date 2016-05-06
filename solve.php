@@ -49,8 +49,17 @@
               </br>
               <p>Your personal algorithm design assistant</p>
 <?php
-$output = shell_exec('java -jar ~/MOAP.jar ' . $_POST["moap-input"] . "2>&1");
-echo "<pre>$output</pre>";
+$cmd = 'java -jar ~/MOAP.jar ' . $_POST["moap-input"];
+while (@ ob_end_flush()); // end all output buffers if any
+
+$proc = popen($cmd, 'r');
+echo '<pre>';
+while (!feof($proc))
+{
+    echo fread($proc, 4096);
+    @ flush();
+}
+echo '</pre>';
 ?>
                         </center>
                     </div>
