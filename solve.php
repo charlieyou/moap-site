@@ -54,12 +54,12 @@
                                 <input type="submit">
                                 </form>
                             </div>
+                        </center>
 <?php
 $cmd = "java -jar /home/youc/MOAP.jar \"" . $_POST["moap-input"] . "\" 2>&1";
 #echo $_POST["moap-input"]."\n";
 echo "<pre>".shell_exec($cmd)."</pre>";
 ?>
-                        </center>
                     </div>
                 </section>
                 <footer id="footer" class="wrapper style5 special">
