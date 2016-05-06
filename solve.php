@@ -48,7 +48,10 @@
                             <img src="images/moap-cropped.png" style='width:50%;' />
               </br>
               <p>Your personal algorithm design assistant</p>
-<?php echo shell_exec('java -jre ~/MOAP.jar ' . $_POST["moap-input"]);?> <br>
+<?php
+echo $_POST["moap-input"];
+# echo shell_exec('java -jre ~/MOAP.jar ' . $_POST["moap-input"]);
+?>
                         </center>
                     </div>
                 </section>
